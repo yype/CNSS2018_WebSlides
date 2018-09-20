@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>WebSlides Keynote: Make a Keynote presentation using HTML</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations. Just essential features, clean code, and lovely CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:32:14"> <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div class="wrap">
+				<img class="aligncenter size-20" src="../static/images/cnsslogo-2000px.png">
+				
+				<div class="flex-content" >
+					<h2>凝聚网络安全工作室</h2>
+					<p>Cohesion Network Security Studio</p>
+					<h4>2018 招新宣讲</h4>
+				</div>
+		  </div>
+		  
+          <!-- .end .wrap -->
+        </section>
+        
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <header>
+			<img class="alignright size-5" src="../static/images/cnsslogo-2000px.png">
+		  </header>
+          <div class="wrap slideInLeft aligncenter">
+            <h1>关于凝聚</h1>
+			-
+			<h4>始于2007，UESTC元老级工作室</h4>
+			<h4>研究方向不仅限于安全，还包括开发、运维和美工</h4>
+			<h4>拥有全校最顶尖的技术人才</h4>
+			<h4>足以代表电子科大计算机的最高水平</h4>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		
+		<section class="bg-apple">
+		<div class="wrap">
+			<div class="content-left">
+			 <div class="embed">
+			   <video controls loop poster="../static/images/movie_srcshot.png">
+				<source src="../static/mvs/cnss2017武汉.mp4" type="video/mp4">
+			   </video>
+			  </div><!-- .embed -->
+			  <!-- .wrap = container (width: 90%) -->
+			</div>
+		  
+			<div class="content-left">
+				<h3>凝聚十周年宣传片</h3>
+				<p>// Shot and rendered in year 2017.</p>
+			</div>
+		</div>
+        </section>
+		
+		
+		
+		<section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap fadeInUp alignleft">
+            <h1>凝聚特色</h1>
+			<p>only in CNSS</p>
+			</br>
+			<h4>1. 去行政化，不依赖计算机学院生存</h4>
+			<p>没有办公室职务，只做纯技术研究</p>
+			<h4>2. 只招收真正对技术有兴趣，并且有毅力、有一定自学能力的同学</h4>
+			<p>低水分、高质量的交流氛围</p>
+			<h4>3. 涉猎广泛，触类旁通</h4>
+			<p>不仅限于安全方向，开发、运维和美工方向在校内也是独步武林</p>
+			
+          </div>
+		  <footer>
+			<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+          <!-- .end .wrap -->
+        </section>
+		
+		
+		
+		<section class="bg-apple">
+          <div class="wrap">
+            <h2>CNSS 2018 主攻方向</h2>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+                    Binary / 二进制安全
+                  </h2>
+                  系统内核原理、逆向工程、驱动开发
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-link">
+                      <use xlink:href="#fa-server"></use>
+                    </svg>
+                     Web安全
+                  </h2>
+                   渗透测试、漏洞攻防、数据库安全
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-clock-o">
+                      <use xlink:href="#fa-calculator"></use>
+                    </svg>
+                    Cryptograpy / 密码学
+                  </h2>
+                  数论算法、通讯安全、协议分析
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    Dev / 开发
+                  </h2>
+                  AI全栈、Web高性能开发、嵌入式开发
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-text-height">
+                      <use xlink:href="#fa-paint-brush"></use>
+                    </svg>
+                    Design / 美工
+                  </h2>
+                  UI/UX 设计、网页以及海报设计制作
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <span>+<sup>+</sup></span>
+                    Game
+                  </h2>
+                  STEAM、OSU、LOL、GALGAMEs
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <h1 class="slideInLeft">
+			各方向介绍
+		  </h1>
+		  <footer>
+			<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div class="wrap zoomIn">
+			<h1>
+				Binary / 二进制安全
+			</h1>
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		<section class="bg-facebook aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div class="wrap">
+			<div class="fadeInUp">
+		  
+			<h1>
+				Office 漏洞现场演示
+			</h1>
+			<h3>
+				------> 从计算器到远程控制
+			</h3>
+			<p class="content-center">
+				by AiHimmel
+			</p>
+			
+		  </div>
+		  </div>
+          <!-- .end .wrap -->
+		  
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div class="wrap fadeIn">
+			<h1>
+				二进制安全？
+			</h1>
+			</br></br></br>
+			<h3>
+				Reverse Engineering (逆向工程)
+			</h3>
+			<h3>
+				PWN (漏洞利用、系统提权）
+			</h3>
+			<h3>
+				Kernel Programming (内核编程)
+			</h3>
+			
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div>
+			<h1 class="wrap fadeIn">
+				> > 逆向工程 < <
+			</h1>
+			</br></br></br>
+			
+			<p class="wrap slideInRight">即使程序的开发者未公开程序源码，仅仅提供了程序的可执行文件，有实力的逆向分析人员也能通过分析其代码掌握程序的内部组成结构。
+			</p>
+			<p class="wrap slideInRight">
+			对于更少的一部分人来说，程序的源码是一览无余的，这正是逆向分析技术最吸引人的地方。
+			</p>		
+			
+			<div class="wrap fadeInUp slow">
+				
+			<ul class="flexblock blink border aligncenter">
+              <li>
+                <a href="#" title="Block Link = .blink">
+                  <!--div required = padding li or li>a-->
+                  <div>
+                    <h2>授权破解</h2>
+                    <ol>
+                      <li>破除商业软件、系统的验证授权</li>
+                      <li>打破商业闭源，技术保护，开放源代码</li>
+                      <li>-- To Be a Cracker --</li>
+                    </ol>
+                  </div>
+				  
+				  
+                </a>
+              </li>
+			  <li>
+                <a href="#" title="Block Link = .blink">
+                  <!--div required = padding li or li>a-->
+                  <div>
+                    <h3>游戏辅助、外挂</h3>
+                    <ol>
+                      <li>逆向分析游戏结构，实时修改游戏代码</li>
+                      <li>注入游戏进程，添加变态功能</li>
+                      <li>-- Game Cheating --</li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="#" title="Block Link = .blink">
+                  <!--div required = padding li or li>a-->
+                  <div>
+                    <h3>漏洞分析</h3>
+                    <ol>
+                      <li>从底层分析程序bug的产生原因</li>
+                      <li>BUG消失，玄学不再</li>
+                      <li>-- BUG Killer --</li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+              
+            </ul>
+			</div>
+			
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <header>
+			<h4 class="alignleft">
+				逆向所需技能
+			</h4>
+		  </header>
+		  
+		  <div class="wrap fadeIn">
+			<h2>
+				编程能力 ---> 基础
+			</h2>
+			</br></br></br>
+			<h4>
+				能熟练运用调试工具 + 了解操作系统相关知识
+			</h4>
+			<h4>
+				了解基本加解密方法
+			</h4>
+			<h4>
+				足够的耐心(重点)
+			</h4>
+			
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div>
+			<h1 class="wrap fadeIn">
+				> > PWN / 漏洞挖掘与利用 < <
+			</h1>
+			</br></br></br>
+			
+			<h4 class="wrap slideInRight">
+				寻找潜在的程序漏洞，编写利用代码，获得系统权限
+			</h4>
+					
+			
+			
+			
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		
+		<section class="bg-apple">
+          <div class="wrap">
+            <h3>PWN -> Further more ... ?</h3>
+			<p>贴近生活的例子</p>
+            <!-- li>a? Add blink = <ul class="flexblock metrics blink">-->
+            <ul class="flexblock metrics border">
+              
+              <li>
+                <span>
+                  <img class="size-30" src="../static/images/cydia.png" >
+                </span>
+				<h5>
+					iOS 越狱
+				</h5>
+                
+              </li>
+			  
+              <li>
+                <span>
+                  <img class="size-40" src="../static/images/icons8-android-os-480.png" >
+                </span>
+				<h5>
+					Android root 提权
+				</h5>
+              </li>
+              
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <header>
+		  <div class="content-left">
+			<h4>
+				PWN 所需技能
+			</h4>
+		  </div>
+			
+		  </header>
+		  
+		  <div class="wrap fadeIn">
+			<h2>
+				扎实的逆向工程基础
+			</h2>
+			</br></br></br>
+			<h4>
+				对目标操作系统底层的深入理解
+			</h4>
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		<section class="bg-apple">
+          <div class="wrap">
+            <!-- [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center">
+              <h3>二进制方向书单</h3>
+			 
+			  </br>
+			   ---
+			  </br></br>
+			  
+              <p>
+				《汇编语言》 - 王爽
+			  </p>
+			  <p>
+				《逆向工程核心原理》- 李承远
+			  </p>
+			  <p>
+				《深入理解计算机系统》- Randal E.Bryant / David O'Hallaron
+			  </p>
+			  <p>
+				《Android软件安全与逆向分析》- 丰生强
+			  </p>
+			  <p>
+				《加密与解密》- 段钢
+			  </p>
+            </div>
+            <!-- end .content-center -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section class="bg-apple">
+          <div class="wrap">
+            <!-- [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center">
+              <h3>逆向常用工具</h3>
+			 
+			  </br>
+			   ---
+			  </br></br>
+			  
+              <p>
+				OllyDbg （古董级别调试器）
+			  </p>
+			  
+			  <p>
+				GDB - *nix 下调试利器
+			  </p>
+			  <p>
+				X96Dbg - 开源、持续更新
+			  </p>
+			  <p>
+				dnspy - 现代化的 .NET 程序分析神器
+			  </p>
+			  <p>
+				IDA Pro - 逆向工程师的梦中情人
+			  </p>
+            </div>
+            <!-- end .content-center -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div class="wrap zoomIn">
+			<h1>
+				Web 安全
+			</h1>
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div class="wrap fadeIn">
+			<h1>
+				Pentest / 渗透测试
+			</h1>
+			</br></br></br>
+			<h3>
+				模拟恶意黑客的攻击方法 -> 评估现有计算机网络系统的安全
+			</h3>
+			</br></br>
+			<p>
+				挖掘服务器、网站漏洞并修复，加固防御体系
+			</p>
+			
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div class="wrap slideInLeft">
+			
+			<h3>
+				通俗的说就是
+			</h3>
+			
+			<h1>
+				日站
+			</h1>
+			
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		<section class="bg-facebook aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div class="wrap">
+			<div class="fadeInUp">
+		  
+			<h1>
+				暗流涌动的Web世界
+			</h1>
+			<h3>
+				------> 从CTF到渗透测试
+			</h3>
+			<p class="content-center">
+				by N0rth3ty
+			</p>
+			
+		  </div>
+		  </div>
+          <!-- .end .wrap -->
+		  
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div>
+			<h1 class="wrap fadeIn">
+				> > Pentest 所需技能 < <
+			</h1>
+			</br></br></br>
+			<h3 class="wrap fadeInUp">
+				VPS Linux la(n)mp
+			</h3>
+			<h4 class="wrap slideInRight">
+				了解 HTML/JS/CSS 前端三巨头
+			</h4>
+			<h4 class="wrap slideInLeft">
+				修炼一门自己喜欢的后台语言
+			</h4>
+			<p>
+				(PHP/Python/Go...)
+			</p>
+			
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		<section class="bg-apple aligncenter">
+          <!--.wrap = container (width: 90%) -->
+		  <div>
+			<h1 class="wrap fadeIn">
+				> > Pentest 常用工具 < <
+			</h1>
+			</br></br></br>
+			<h3 class="wrap fadeInUp">
+				Burpsuit
+			</h3>
+			<h4 class="wrap slideInRight">
+				Awvs
+			</h4>
+			<h4 class="wrap slideInLeft">
+				Wireshark
+			</h4>
+			<h4 class="wrap slideInLeft">
+				Sqlmap
+			</h4>
+			<h4 class="wrap slideInLeft">
+				Nmap
+			</h4>
+			<h4 class="wrap slideInLeft">
+				......
+			</h4>
+			
+		  </div>
+          <!-- .end .wrap -->
+		  <footer>
+				<img class="alignright size-10" src="../static/images/cnsslogo-2000px.png">
+		  </footer>
+        </section>
+		
+		
+		<section class="bg-apple">
+          <div class="wrap">
+            <!-- [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center">
+              <h3>Web安全 书单</h3>
+			 
+			  </br>
+			   ---
+			  </br></br>
+			  
+              <p>
+				《白帽子讲web安全》 - 各种漏洞的综述
+				</br>
+				《web前端黑客技术揭秘》- 前端漏洞的更详细说明
+				</br>
+				《web之困：现代web应用安全指南》- web浏览器安全解析
+				</br>
+				《黑客攻防技术宝典》- web实战篇
+				</br>
+				《xss跨站脚本攻击剖析与防御》
+				</br>
+				《SQL注入攻击与防御》
+			  </p>
+			  
+            </div>
+            <!-- end .content-center -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+		
+		
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+
+  </body>
+</html>
